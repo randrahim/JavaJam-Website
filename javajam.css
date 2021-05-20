@@ -1,0 +1,162 @@
+* { box-sizing: border-box; }
+html {
+    background-color: #FCEBB6;	
+    }
+body {  background-color: #FCEBB6;
+        color: #221811;
+        font-family: Verdana, Arial, sans-serif;
+    }
+header { background-color: #D2B48C; 
+        height: 150px;
+        background-image: url(javajamlogo.jpg);
+        background-repeat: no-repeat;
+    }
+header, nav, main, footer { display: block; }
+main   { padding: 0 0 2px 0; 
+        margin-left: 200px;
+        display: block;
+        background-color:  #FEF6C2;
+    }
+main h2, h3, h4, p, div, ul, dl {
+        padding-left: 3em;
+        padding-right: 2em;
+}
+h1  {   padding-top: 45px;
+        padding-left: 220px;
+        font-size: 3em;
+    }
+h4 {    background-color: #D2B48C;
+        font-size: 1.2em;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #221811;
+        padding-bottom: 0px;
+    }
+nav    { text-align: center; 
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-top: 10px;
+        float: left;
+        width: 200px;
+    }
+nav a { text-decoration: none; }
+nav a:link { color: #FEF6C2; }
+nav a:visited { color: #D2B48C; }
+nav a:hover { color: #CC9933; }
+nav ul { list-style-type: none; padding-left: 0;}
+footer { background-color: #D2B48C; 
+        font-size: small; 
+        font-style: italic; 
+        text-align: center;
+        padding-bottom: 10px;
+        border-top: 2px solid #221811;
+    }
+#wrapper { width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #231814;
+        min-width: 900px;
+        max-width: 1280px;
+    }
+.details {  padding-left: 20%;
+            padding-right: 20%;
+            overflow: auto;
+        }
+.floatleft { float: left; 
+            padding-right: 20px;
+            padding-bottom: 20px;}
+img { padding-right: 10px;
+     padding-left: 10px;
+    }
+#heroroad {
+    background-image: url(heroroad.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 250px;
+}
+#heromugs {
+    background-image: url(heromugs.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 250px;
+}
+#heroguitar {
+    background-image: url(heroguitar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 250px;
+}
+#mobile { display: none; }
+#desktop { display: inline; }
+
+@media only screen and (max-width: 1024px) {
+    
+    body { margin:0; background-image: none;}
+    #wrapper { width: auto; min-width: 0;
+        margin: 0; padding: 0; box-shadow: none; }
+    header { border-bottom: 5px solid #FEF6C2;}
+    h1 { margin-top: 0; margin-bottom: 1em;
+        padding-top: 1em; padding-bottom: 1em;
+        font-size: 2.5em;}
+    nav { float: none; width: auto; padding-top: 10px;
+        margin: 10px; font-size: 1.3em;}
+    nav li { display: inline-block;}
+    nav a { padding: 1em; width: 8em; font-weight: bold; 
+            border-style: none;}
+    nav ul { padding: 0; margin: 0;}
+    #heroroad, #heromugs, #heroguitar { padding: 0; margin: 0;}
+    main { padding: 0; margin: 0; font-size: 90%;}
+}
+
+@media only screen and (max-width: 768px) {
+    header { background-image: url(javajammini.jpg); height: 128px;}
+    h1 { font-size: 2em; text-align: center; padding-left: 0;}
+    nav {margin: 0;}
+    nav a { display: block; padding: 0.2em; width: auto;
+        border-bottom: 1px; border-color: #FEF6C2;}
+    nav li { display: block;}
+    main { padding-top: 1px;}
+    h2 { padding-top: 0.5em; padding-right: 0;
+        padding-bottom: 0; padding-left: 0.5em; margin-right: 0.5em;}
+    .details { padding-left: 0; padding-right: 0;}
+    #heroroad, #heromugs, #heroguitar { background-image: none; height: auto;}
+    .floatleft { padding-left: 0.5em; padding-right: 0.5em;}
+    #mobile { display: inline; }
+    #desktop { display: none; }
+}
+
+table {
+	margin: auto;
+    border-spacing: 0;
+	width: 90%;
+    background-color: #ffffcc;
+}
+td, th {
+    padding: 10px;
+}
+tr:nth-of-type(odd) { background-color:#d2b48c; }
+
+form { padding: 2em; }
+label { float: left;
+        display: block;
+        text-align: right;
+        width: 8em;
+        text-align: right; 
+        padding-right: 1em;  }
+input, textarea { margin-bottom: 1em; display: block; }
+#mySubmit { margin-left: 9.5em; }
+audio {
+    display: block;
+    margin-top: 1em;
+}
+.clearleft {
+    margin: 1em;
+    clear: left;
+}
+#herocouch {
+    height: 250px;
+    background-image: url(herocouch.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
